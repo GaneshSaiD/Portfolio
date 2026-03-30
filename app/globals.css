@@ -1,24 +1,19 @@
 @import "tailwindcss";
 
-/* Premium dark theme */
 :root {
-  --background: #020617;   /* deep navy */
+  --background: #020617;
   --foreground: #e2e8f0;
 }
 
-/* Smooth font */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Glow effect */
-.glow {
-  box-shadow: 0 0 20px rgba(59,130,246,0.3);
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
 }
