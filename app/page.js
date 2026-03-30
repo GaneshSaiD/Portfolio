@@ -51,6 +51,7 @@ const PROJECTS = [
     title: "K8s Ops AI Assistant",
     subtitle: "RAG Chatbot for Kubernetes Operations",
     github: "https://github.com/GaneshSaiD/k8s-rag-chatbot",
+    demo: "https://k8s-rag-chatbot.streamlit.app",
     tags: ["Python", "LangChain", "Pinecone", "GPT-4o", "FastAPI", "Docker"],
     problem:
       "Kubernetes engineers waste critical minutes during incidents hunting through hundreds of documentation pages — while generic LLMs hallucinate kubectl commands and non-existent API fields, which is dangerous in production.",
@@ -140,16 +141,28 @@ function ProjectCard({ project, index }) {
           </h3>
           <p className="text-gray-500 text-sm mt-0.5">{project.subtitle}</p>
         </div>
-        {project.github && (
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-white transition shrink-0 mt-1"
-          >
-            <FaGithub className="text-xl" />
-          </a>
-        )}
+        <div className="flex items-center gap-3 shrink-0 mt-1">
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs px-3 py-1.5 rounded-full bg-blue-500 text-white hover:bg-blue-400 transition font-medium"
+            >
+              Live Demo ↗
+            </a>
+          )}
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-white transition"
+            >
+              <FaGithub className="text-xl" />
+            </a>
+          )}
+        </div>
       </div>
 
       {/* Tags */}
