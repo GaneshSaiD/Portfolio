@@ -1,40 +1,24 @@
 @import "tailwindcss";
 
-/* Theme variables */
+/* Premium dark theme */
 :root {
-  --background: #020617;   /* deep dark blue */
-  --foreground: #e2e8f0;   /* soft white */
+  --background: #020617;   /* deep navy */
+  --foreground: #e2e8f0;
 }
 
-/* Optional light mode (not required, but safe) */
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #ffffff;
-    --foreground: #0f172a;
-  }
-}
-
-/* Base styling */
+/* Smooth font */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Smooth UI improvements */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Reusable utility styles */
-.section {
-  @apply mb-16;
-}
-
-.heading {
-  @apply text-3xl md:text-4xl font-bold mb-6;
-}
-
-.subtext {
-  @apply text-gray-400 leading-7;
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 20px rgba(59,130,246,0.3);
 }
