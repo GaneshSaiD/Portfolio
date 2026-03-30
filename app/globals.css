@@ -17,8 +17,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* selection */
 ::selection {
   background: #3b82f6;
-  color: white;
 }
