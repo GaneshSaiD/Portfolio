@@ -17,3 +17,9 @@ body {
   color: white;
   margin-bottom: 20px;
 }
+
+/* Selection highlight */
+::selection {
+  background: #3b82f6;
+  color: white;
+}
